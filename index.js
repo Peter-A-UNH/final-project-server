@@ -26,7 +26,7 @@ const server = http.createServer((req, res) => {
             res.end(content)
         });
     }
-    else if(req.url==='/about'){
+    else if(req.url==='about'){
         fs.readFile(path.join(__dirname, 'public', 'about.html'),(err, content)=>{
             if (err) throw err;
             res.writeHead(200, {'Content-Type': "text/html"});
