@@ -33,7 +33,7 @@ const server = http.createServer((req, res) => {
             res.end(content)
         });
     }
-    else if(req.url==='/api'){
+    else if(req.url==='api'){
         //display api information
         fs.readFile(path.join(__dirname, 'public', 'pizzas.json'),(err, content)=>{
             if (err) throw err;
