@@ -1,0 +1,265 @@
+<!--
+Peter Aurigemma
+Banner id: 00156583
+CSCI-6655-1
+Assignment 3
+File name: index.html
+Email: pauri1@unh.newhaven.edu
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/285983fc4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>pa3.us</title>
+</head>
+<body id="body-link">
+    <div class="container">
+        <main>
+            <h1>pa3.us</h1>
+        </main>
+        <nav id="mynav">
+            <a class="menulink active" href="#body-link">home</a>
+            <a class="menulink" href="#about-link">about</a>
+            <a class="menulink" href="#edu-link">education</a>
+            <a class="menulink" href="#proj-link">projects</a>
+            <a class="menulink" href="#exp-link" >experience</a>
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
+        </nav>
+        <about class="odd" id="about-link">
+            <h1>About</h1>
+            <p>I am A father of three girls that works seventy plus hours a week. I like to Race Sailboat or Ski and Snowboard when I have time. I enjoy learning new things</p>
+        </about>
+        <about-Img class="odd">
+            <img src="https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80" alt="Back to School" >
+        </about-Img>
+        <soc>
+            <a href="https://twitter.com/petera3" ><i class="fab fa-twitter-square fa-3x"></i></a><br>
+            <a href="https://www.linkedin.com/in/peter-aurigemma-852b4936/" ><i class="fab fa-linkedin fa-3x"></i></a><br>
+            <a href="https://github.com/UNH-iOS-Spring20/final-project-peter" ><i class="fab fa-git-square fa-3x"></i></a><br>
+        </soc>
+        <edu class="even" id="edu-link">
+            <h1>Education</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A labore asperiores, architecto doloremque ipsam repudiandae facere odit! Numquam deserunt accusantium, culpa sit quos vero sapiente nisi voluptatum corporis unde beatae?</p>
+        </edu>
+        <edu-Img class="even">
+            <img class= sing-image src="https://www.newhaven.edu/_resources/images/news/non-college-specific/2020/first-responders-residence-hall.jpg" alt="UNH entrance" >
+        </edu-Img>
+        <proj class="odd" id="proj-link">
+            <h1>Projects</h1>
+            <p>Swift UI BoatZap Application project. An application I wrote for listing and selling boats. One great feature to this application is a customer can navagate directly to the boat and a seller can change the boats location.</p>
+        </proj>
+        <proj-Img class="odd">
+            <iframe id=iframe width="528" height="328" src="https://www.youtube.com/embed/ECoD7-YFxaI"></iframe>
+        </proj-Img>
+        <exp class="even" id="exp-link">
+            <h1>Experience</h1>
+            <p>I am Finishing up my Masters Degree in Computer science at the University of New Haven. I am currently employed as a product owner in charge of a software platform that helps Marinas and Boat Yards 
+                manage their day to day operation. 
+            </p>
+        </exp>
+        <exp-Img1 class="even">
+            <img src="https://www.stockvault.net/data/2018/06/29/252793/preview16.jpg" alt="system engineer" >
+        </exp-Img1>
+        <exp-Img2 class="even">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Marina_Ka%C5%A1tela_I_%2841189931530%29.jpg" alt="system engineer" >
+        </exp-Img2>
+        <footer>
+            footer
+        </footer>
+
+        <script>
+            function hamburger() {
+              var x = document.getElementById("mynav");
+              if (x.className === "nav") {
+                x.className += " responsive";
+              } else {
+                x.className = "nav";
+              }
+            }
+            </script>
+    </div>
+</body>
+</html>
+<style>
+:root{
+ /* added a color patterns as required. I have a separate CSS file for the black and white version. */
+    --color1: #7400B8;
+    --color2: #6930C3;
+    --color3: #5E60CE;
+    --color4: #5390D9;
+    --color5: #4EA8DE;
+    --color6: #48BFE3;
+    --color7: #56CFE1;
+    --color8: #64DFDF;
+    --color9: #72EFDD;
+    --color10: #80FFDB;
+
+    --mypaddingSize: 0.5em; 
+
+    background-color: var(--color3)
+}
+.container{
+    display: grid;
+    height: 100vh;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.3fr;
+    grid-template-rows: 0.4fr 1.5fr 1.5fr 1.5fr 1.5fr 0.3fr;
+
+    grid-template-areas: 
+    "main main main nav nav nav nav nav"
+    "about about about about-Img about-Img about-Img about-Img soc"
+    "edu edu edu edu-Img edu-Img edu-Img edu-Img soc"
+    "proj proj proj proj-Img proj-Img proj-Img proj-Img soc"
+    "exp exp exp exp-Img1 exp-Img1 exp-Img2 exp-Img2 soc"
+    "footer footer footer footer footer footer footer footer"
+    ;
+
+    grid-gap: 0.5rem;
+}
+/* Added the hamburger at this size because this is when the navigation links started to overlap.*/
+@media screen and (max-width: 850px) {  
+    nav.responsive {position: relative;}
+    nav.responsive a.icon {
+      position: absolute;
+      right: 0.6em;
+      top: 0.6em; 
+    }
+    nav a:not(:first-child) {display: none;}   /* used https://www.w3schools.com/howto/howto_js_topnav_responsive.asp as a template for the javascript */
+    nav a.icon {
+      float: right;
+      display: block;
+    }
+    nav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 500px){ 
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 0.1fr 0.2fr;
+
+        grid-template-areas: 
+        "main"
+        "nav"
+        "about"
+        "about-Img"
+        "edu"
+        "edu-Img"
+        "proj"
+        "proj-Img"
+        "exp"
+        "exp-Img1"
+        "exp-Img2"
+        "soc"
+        "footer"
+        ;
+        row-gap: 0.1rem;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+iframe {
+    max-width: 100%;
+    height: auto;
+    min-height: 250px; 
+}
+nav .icon {
+    display: none;
+  }
+nav{
+    grid-area: nav;
+    padding: var(--mypaddingSize);
+    vertical-align: bottom;
+    color: var(--color10);
+    float: right;
+    padding-top: 40px;
+    padding-bottom: 2px;
+}
+.menulink{
+    padding-top: 8px;
+    padding-inline: 20px;
+    padding-bottom: 8px;
+    background-color: var(--color2);
+    color: var(--color6);
+}
+#menu{
+    width: 70%;
+    vertical-align: bottom;
+    float: right;
+    padding-bottom: 2px;
+}
+main{
+    grid-area: main;
+    padding: var(--mypaddingSize);
+    background-color: var(--color10);
+    color: var(--color1);
+}
+.odd{
+    background-color: var(--color4);
+    color: var(--color9);
+}
+.even{
+    background-color: var(--color2);
+    color: var(--color8);
+}
+about{
+    grid-area: about;
+    padding: var(--mypaddingSize);
+}
+about-Img{
+    grid-area: about-Img;
+    padding: var(--mypaddingSize);
+}
+soc{
+    background-color: var(--color5);
+    color: var(--color10);
+    grid-area: soc;
+    padding: var(--mypaddingSize);
+    
+}
+edu{
+    grid-area: edu;
+    padding: var(--mypaddingSize);
+}
+edu-Img{
+    grid-area: edu-Img;
+    padding: var(--mypaddingSize);
+}
+proj{
+    grid-area: proj;
+    padding: var(--mypaddingSize);
+}
+proj-Img{
+    grid-area: proj-Img;
+    padding: var(--mypaddingSize);
+}
+exp{
+    grid-area: exp;
+    padding: var(--mypaddingSize);
+}
+exp-Img1{
+    grid-area: exp-Img1;
+    padding: var(--mypaddingSize);
+}
+exp-Img2{
+    grid-area: exp-Img2;
+    padding: var(--mypaddingSize);
+}
+footer{
+    background-color: var(--color5);
+    color: var(--color5);
+    grid-area: footer;
+    padding: var(--mypaddingSize);
+}
+</style>
