@@ -19,13 +19,6 @@ const server = http.createServer((req, res) => {
             res.end(content)
         });
     }
-    /*if(req.url ==='about'){
-        fs.readFile(path.join(__dirname, 'public/About', 'index.html'),(err, content)=>{
-            if (err) throw err;
-            res.writeHead(200, {'Content-Type': "text/html"});
-            res.end(content)
-        });
-    }*/
     else if(req.url==='/about'){
         fs.readFile(path.join(__dirname, 'public', 'about.html'),(err, content)=>{
             if (err) throw err;
@@ -37,6 +30,11 @@ const server = http.createServer((req, res) => {
         //display api information
         fs.readFile(path.join(__dirname, 'public', 'pizzas.json'),(err, content)=>{
             if (err) throw err;
+
+            res.header("Access-Control-Allow-Origin", "*");
+            res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+
+
             res.writeHead(200, {'Content-Type': 'application/json'});
             res.end(content)
         });
