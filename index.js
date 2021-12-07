@@ -20,7 +20,7 @@ const server = http.createServer((req, res) => {
             if (err) throw err;
 
             res.setHeader("Access-Control-Allow-Origin", "*");
-            res.writeHead(200, {'Content-Type': 'application/json'});
+            //res.writeHead(200, {'Content-Type': 'application/json'});
             res.end(content)
         });
     }
