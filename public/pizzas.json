@@ -11,7 +11,6 @@
             "phone":"2038655762",
             "year": 1925,
             "isbest": true
-
         },
      
         {
@@ -74,4 +73,4 @@
             "isbest": false
         }
     ]
- }
+}
