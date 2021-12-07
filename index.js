@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
             if (err) throw err;
 
             res.writeHead(200, {'Content-Type': "text/html"});
-            res.end(content);
+            res.end(content)
         });
     }
     if(req.url ==='/einstein'){
@@ -33,7 +33,7 @@ const server = http.createServer((req, res) => {
             if (err) throw err;
 
             res.setHeader("Access-Control-Allow-Origin", "*");
-            res.writeHead(200, {'Content-Type': 'application/json'});
+            //res.writeHead(200, {'Content-Type': 'application/json'});
             res.end(content)
         });
     }
