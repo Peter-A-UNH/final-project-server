@@ -1,76 +1,76 @@
 [
     
-     
-        {
-            "id": 1,
-            "name":"Frank Pepe's Pizzeria Napoletana",
-            "address": "157 Wooster St.",
-            "city": "New Haven",
-            "state": "CT",
-            "zip": "06511",
-            "phone":"2038655762",
-            "year": 1925,
-            "isbest": true
-        },
-     
-        {
-            "id": 2,
-            "name":"Sally's Apizza",
-            "address": "237 Wooster St.",
-            "city": "New Haven",
-            "state": "CT",
-            "zip": "06511",
-            "phone":"2036245271",
-            "year": 1938,
-            "isbest": false
-        },
-
-        {
-            "id": 3,
-            "name":"Modern Apizza",
-            "address": "874 State St.",
-            "city": "New Haven",
-            "state": "CT",
-            "zip": "06511",
-            "phone":"2037765306",
-            "year": 1934,
-            "isbest": false
-        },
-
-        {
-            "id": 4,
-            "name":"krust",
-            "address": "686 Main St.",
-            "city": "Middletown",
-            "state": "CT",
-            "zip": "06457",
-            "phone": "8603589816",
-            "year": 2013,
-            "isbest": false
-        },
-
-        {
-            "id": 5,
-            "name":"Colony Grill",
-            "address": "172 Myrtle Ave.",
-            "city": "Stamford",
-            "state": "CT",
-            "zip": "06902",
-            "phone": "2033592184",
-            "year": 1935,
-            "isbest": false
-        },
-
-        {
-            "id": 6,
-            "name":"Bufalina",
-            "address": "1070 Boston Post Rd.",
-            "city": "Guilford",
-            "state": "CT",
-            "zip": "06437",
-            "phone": "2034581377",
-            "year": 2016,
-            "isbest": false
-        }
     
-    ]
+    {
+        "id": 1,
+        "name":"Frank Pepe's Pizzeria Napoletana",
+        "address": "157 Wooster St.",
+        "city": "New Haven",
+        "state": "CT",
+        "zip": "06511",
+        "phone":"2038655762",
+        "year": 1925,
+        "isbest": true
+    },
+    
+    {
+        "id": 2,
+        "name":"Sally's Apizza",
+        "address": "237 Wooster St.",
+        "city": "New Haven",
+        "state": "CT",
+        "zip": "06511",
+        "phone":"2036245271",
+        "year": 1938,
+        "isbest": false
+    },
+
+    {
+        "id": 3,
+        "name":"Modern Apizza",
+        "address": "874 State St.",
+        "city": "New Haven",
+        "state": "CT",
+        "zip": "06511",
+        "phone":"2037765306",
+        "year": 1934,
+        "isbest": false
+    },
+
+    {
+        "id": 4,
+        "name":"krust",
+        "address": "686 Main St.",
+        "city": "Middletown",
+        "state": "CT",
+        "zip": "06457",
+        "phone": "8603589816",
+        "year": 2013,
+        "isbest": false
+    },
+
+    {
+        "id": 5,
+        "name":"Colony Grill",
+        "address": "172 Myrtle Ave.",
+        "city": "Stamford",
+        "state": "CT",
+        "zip": "06902",
+        "phone": "2033592184",
+        "year": 1935,
+        "isbest": false
+    },
+
+    {
+        "id": 6,
+        "name":"Bufalina",
+        "address": "1070 Boston Post Rd.",
+        "city": "Guilford",
+        "state": "CT",
+        "zip": "06437",
+        "phone": "2034581377",
+        "year": 2016,
+        "isbest": false
+    }
+    
+]
