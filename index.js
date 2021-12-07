@@ -18,7 +18,7 @@ const server = http.createServer((req, res) => {
         //display api information
         fs.readFile(path.join(__dirname, 'public', 'pizzas.json'),(err, content)=>{
             if (err) throw err;
-
+    
             res.setHeader("Access-Control-Allow-Origin", "*");
             res.writeHead(200, {'Content-Type': 'application/json'});
             res.end(content)
